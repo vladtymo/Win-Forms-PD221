@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.mainLabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.coordsLabel = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timeLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // mainLabel
@@ -78,12 +81,28 @@
             this.coordsLabel.TabIndex = 3;
             this.coordsLabel.Text = "Cursor Coords: 45 : 42";
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timeLabel
+            // 
+            this.timeLabel.AutoSize = true;
+            this.timeLabel.Location = new System.Drawing.Point(38, 598);
+            this.timeLabel.Name = "timeLabel";
+            this.timeLabel.Size = new System.Drawing.Size(92, 32);
+            this.timeLabel.TabIndex = 4;
+            this.timeLabel.Text = "Time: 0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1148, 667);
+            this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.coordsLabel);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -102,5 +121,7 @@
         private Button button1;
         private Button button2;
         private Label coordsLabel;
+        private System.Windows.Forms.Timer timer1;
+        private Label timeLabel;
     }
 }

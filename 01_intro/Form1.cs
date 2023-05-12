@@ -1,9 +1,12 @@
+using Microsoft.VisualBasic.Devices;
+using System.Diagnostics;
+
 namespace _01_intro
 {
     public partial class Form1 : Form
     {
         // properties...
-
+        private int counter = 0;
         public Form1()
         {
             InitializeComponent();
@@ -53,6 +56,11 @@ namespace _01_intro
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
             this.coordsLabel.Text = $"Cursor position: {e.X} : {e.Y}";
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timeLabel.Text = $"Time: {++counter}";
         }
     }
 }
