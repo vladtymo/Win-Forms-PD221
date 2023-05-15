@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_controls", "02_controls\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_dz_meals", "02_dz_meals\02_dz_meals.csproj", "{43FE7640-80DB-4736-A536-E7274CEA3CE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_list_controls", "03_list_controls\03_list_controls.csproj", "{2D45F53D-0CC0-4857-B7EF-BF3D4E19E594}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{43FE7640-80DB-4736-A536-E7274CEA3CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43FE7640-80DB-4736-A536-E7274CEA3CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43FE7640-80DB-4736-A536-E7274CEA3CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D45F53D-0CC0-4857-B7EF-BF3D4E19E594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D45F53D-0CC0-4857-B7EF-BF3D4E19E594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D45F53D-0CC0-4857-B7EF-BF3D4E19E594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D45F53D-0CC0-4857-B7EF-BF3D4E19E594}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
