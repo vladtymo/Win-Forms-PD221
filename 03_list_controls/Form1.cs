@@ -70,6 +70,11 @@ namespace _03_list_controls
 
             UpdateUserComboBox();
         }
+
+        private void ListBoxItemsShowBtnClick(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Color: {string.Join(", ", listBox1.SelectedItems.Cast<string>())}");
+        }
     }
 
     public class User

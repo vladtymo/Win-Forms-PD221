@@ -38,6 +38,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cityComboBox
@@ -156,11 +158,43 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 32;
+            this.listBox1.Items.AddRange(new object[] {
+            "Red",
+            "Green",
+            "Blue",
+            "Black",
+            "White",
+            "Yellow",
+            "Gray",
+            "Cyan",
+            "Pink"});
+            this.listBox1.Location = new System.Drawing.Point(819, 63);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.listBox1.Size = new System.Drawing.Size(553, 452);
+            this.listBox1.TabIndex = 10;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(819, 543);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(553, 46);
+            this.button5.TabIndex = 11;
+            this.button5.Text = "Show";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.ListBoxItemsShowBtnClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(783, 651);
+            this.ClientSize = new System.Drawing.Size(1454, 651);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label4);
@@ -190,5 +224,7 @@
         private Label label4;
         private Button button3;
         private Button button4;
+        private ListBox listBox1;
+        private Button button5;
     }
 }
