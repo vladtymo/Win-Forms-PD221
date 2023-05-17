@@ -73,7 +73,12 @@ namespace _03_list_controls
 
         private void ListBoxItemsShowBtnClick(object sender, EventArgs e)
         {
-            MessageBox.Show($"Color: {string.Join(", ", listBox1.SelectedItems.Cast<string>())}");
+            MessageBox.Show($"Selected Colors: {string.Join(", ", listBox1.SelectedItems.Cast<string>())}");
+        }
+
+        private void CheckedListBoxShowBtnClick(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Checked Color: {string.Join(", ", checkedListBox1.CheckedItems.Cast<string>())}");
         }
     }
 

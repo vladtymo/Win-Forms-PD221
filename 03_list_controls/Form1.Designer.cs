@@ -40,6 +40,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // cityComboBox
@@ -175,24 +177,54 @@
             this.listBox1.Location = new System.Drawing.Point(819, 63);
             this.listBox1.Name = "listBox1";
             this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBox1.Size = new System.Drawing.Size(553, 452);
+            this.listBox1.Size = new System.Drawing.Size(268, 452);
             this.listBox1.TabIndex = 10;
             // 
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(819, 543);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(553, 46);
+            this.button5.Size = new System.Drawing.Size(268, 46);
             this.button5.TabIndex = 11;
             this.button5.Text = "Show";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.ListBoxItemsShowBtnClick);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(1138, 536);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(268, 46);
+            this.button6.TabIndex = 13;
+            this.button6.Text = "Show";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.CheckedListBoxShowBtnClick);
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Red",
+            "Green",
+            "Blue",
+            "Black",
+            "White",
+            "Yellow",
+            "Gray",
+            "Cyan",
+            "Pink"});
+            this.checkedListBox1.Location = new System.Drawing.Point(1138, 63);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(268, 436);
+            this.checkedListBox1.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1454, 651);
+            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button4);
@@ -226,5 +258,7 @@
         private Button button4;
         private ListBox listBox1;
         private Button button5;
+        private Button button6;
+        private CheckedListBox checkedListBox1;
     }
 }
