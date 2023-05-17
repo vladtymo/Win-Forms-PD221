@@ -21,6 +21,8 @@ namespace _03_list_controls
             //usersConboBox.Items.AddRange(users.ToArray());
             // 2 - using DataSourse (binding)
             usersComboBox.DataSource = users;
+            // nameof(member) - get member name as string
+            usersComboBox.DisplayMember = nameof(User.ShortInfo);
         }
 
         private void UpdateUserComboBox()
@@ -87,6 +89,7 @@ namespace _03_list_controls
         public string Login { get; set; }
         public string Email { get; set; }
         public DateTime CreationDate { get; }
+        public string ShortInfo => $"{Login} | {Email.First()}...{Email.Substring(Email.IndexOf('@'))}";
 
         public User(string email, string login = null)
         {
@@ -97,7 +100,7 @@ namespace _03_list_controls
 
         public override string ToString()
         {
-            return $"{Email} : {CreationDate.ToShortTimeString()}";
+            return $"{Email} | {CreationDate.ToShortTimeString()}";
         }
     }
 }
