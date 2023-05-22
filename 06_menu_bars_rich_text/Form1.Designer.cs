@@ -68,11 +68,18 @@
             toolStripTextBox2 = new ToolStripTextBox();
             toolStripLabel2 = new ToolStripLabel();
             toolStripProgressBar1 = new ToolStripProgressBar();
-            label1 = new Label();
             toolStripLabel3 = new ToolStripLabel();
             toolStripComboBox2 = new ToolStripComboBox();
+            toolStripSeparator7 = new ToolStripSeparator();
+            toolStripButton2 = new ToolStripButton();
+            statusStrip1 = new StatusStrip();
+            toolStripStatusLabel1 = new ToolStripStatusLabel();
+            toolStripProgressBar2 = new ToolStripProgressBar();
+            richTextBox = new RichTextBox();
+            toolStripButton3 = new ToolStripButton();
             menuStrip1.SuspendLayout();
             toolStrip1.SuspendLayout();
+            statusStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
@@ -81,7 +88,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1, editToolStripMenuItem, viewToolStripMenuItem, aboutToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1402, 40);
+            menuStrip1.Size = new Size(1515, 40);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -286,10 +293,10 @@
             // toolStrip1
             // 
             toolStrip1.ImageScalingSize = new Size(32, 32);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripLabel1, toolStripTextBox2, toolStripLabel2, toolStripProgressBar1, toolStripLabel3, toolStripComboBox2 });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripLabel1, toolStripTextBox2, toolStripLabel2, toolStripProgressBar1, toolStripLabel3, toolStripComboBox2, toolStripSeparator7, toolStripButton2, toolStripButton3 });
             toolStrip1.Location = new Point(0, 40);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(1402, 42);
+            toolStrip1.Size = new Size(1515, 42);
             toolStrip1.TabIndex = 1;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -313,7 +320,6 @@
             toolStripTextBox2.Name = "toolStripTextBox2";
             toolStripTextBox2.Size = new Size(100, 42);
             toolStripTextBox2.Text = "14";
-            toolStripTextBox2.TextChanged += toolStripTextBox2_TextChanged;
             // 
             // toolStripLabel2
             // 
@@ -325,15 +331,6 @@
             // 
             toolStripProgressBar1.Name = "toolStripProgressBar1";
             toolStripProgressBar1.Size = new Size(100, 36);
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(638, 308);
-            label1.Name = "label1";
-            label1.Size = new Size(126, 32);
-            label1.TabIndex = 2;
-            label1.Text = "Text Editor";
             // 
             // toolStripLabel3
             // 
@@ -347,21 +344,78 @@
             toolStripComboBox2.Name = "toolStripComboBox2";
             toolStripComboBox2.Size = new Size(121, 42);
             // 
+            // toolStripSeparator7
+            // 
+            toolStripSeparator7.Name = "toolStripSeparator7";
+            toolStripSeparator7.Size = new Size(6, 42);
+            // 
+            // toolStripButton2
+            // 
+            toolStripButton2.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton2.Image = (Image)resources.GetObject("toolStripButton2.Image");
+            toolStripButton2.ImageTransparentColor = Color.Magenta;
+            toolStripButton2.Name = "toolStripButton2";
+            toolStripButton2.Size = new Size(248, 36);
+            toolStripButton2.Text = "Change Selected Text";
+            toolStripButton2.Click += toolStripButton2_Click;
+            // 
+            // statusStrip1
+            // 
+            statusStrip1.ImageScalingSize = new Size(32, 32);
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, toolStripProgressBar2 });
+            statusStrip1.Location = new Point(0, 783);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Size = new Size(1515, 42);
+            statusStrip1.TabIndex = 3;
+            statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            toolStripStatusLabel1.Size = new Size(139, 32);
+            toolStripStatusLabel1.Text = "Some info...";
+            // 
+            // toolStripProgressBar2
+            // 
+            toolStripProgressBar2.Name = "toolStripProgressBar2";
+            toolStripProgressBar2.Size = new Size(100, 30);
+            // 
+            // richTextBox
+            // 
+            richTextBox.Location = new Point(12, 107);
+            richTextBox.Name = "richTextBox";
+            richTextBox.Size = new Size(1491, 652);
+            richTextBox.TabIndex = 4;
+            richTextBox.Text = "Hello Rich Text Box...";
+            // 
+            // toolStripButton3
+            // 
+            toolStripButton3.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton3.Image = (Image)resources.GetObject("toolStripButton3.Image");
+            toolStripButton3.ImageTransparentColor = Color.Magenta;
+            toolStripButton3.Name = "toolStripButton3";
+            toolStripButton3.Size = new Size(46, 36);
+            toolStripButton3.Text = "toolStripButton3";
+            toolStripButton3.Click += toolStripButton3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1402, 611);
-            Controls.Add(label1);
+            ClientSize = new Size(1515, 825);
+            Controls.Add(richTextBox);
+            Controls.Add(statusStrip1);
             Controls.Add(toolStrip1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Text Editor";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -407,8 +461,14 @@
         private ToolStripTextBox toolStripTextBox2;
         private ToolStripLabel toolStripLabel2;
         private ToolStripProgressBar toolStripProgressBar1;
-        private Label label1;
         private ToolStripLabel toolStripLabel3;
         private ToolStripComboBox toolStripComboBox2;
+        private StatusStrip statusStrip1;
+        private ToolStripStatusLabel toolStripStatusLabel1;
+        private ToolStripProgressBar toolStripProgressBar2;
+        private RichTextBox richTextBox;
+        private ToolStripSeparator toolStripSeparator7;
+        private ToolStripButton toolStripButton2;
+        private ToolStripButton toolStripButton3;
     }
 }

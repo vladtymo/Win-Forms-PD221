@@ -41,9 +41,27 @@ namespace _06_menu_bars_rich_text
             }
         }
 
-        private void toolStripTextBox2_TextChanged(object sender, EventArgs e)
+        private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            label1.Font = new Font(fontToolStripMenuItem.Font.FontFamily, float.Parse(toolStripTextBox2.Text), FontStyle.Regular);
+            richTextBox.SelectionBackColor = Color.DarkBlue;
+            richTextBox.SelectionColor = Color.White;
+            richTextBox.SelectionFont = new Font(FontFamily.GenericSerif, 16);
+
+            // ------- save/load RTF
+            //richTextBox.SaveFile("...", RichTextBoxStreamType.RichText);
+            //richTextBox.LoadFile("...", RichTextBoxStreamType.RichText);
+
+            MessageBox.Show(richTextBox.SelectedRtf);
         }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            richTextBox.SelectionBullet = !richTextBox.SelectionBullet;
+        }
+
+        //private void toolStripTextBox2_TextChanged(object sender, EventArgs e)
+        //{
+        //    label1.Font = new Font(fontToolStripMenuItem.Font.FontFamily, float.Parse(toolStripTextBox2.Text), FontStyle.Regular);
+        //}
     }
 }
