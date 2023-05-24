@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_list_controls", "03_list
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_range_controls", "04_range_controls\04_range_controls.csproj", "{6194DF4B-EF1B-4EE5-93F1-79C6A9C814B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_multi_forms", "05_multi_forms\05_multi_forms.csproj", "{B28DA96D-4EE8-4A82-AFFC-F4029CB29287}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_multi_forms", "05_multi_forms\05_multi_forms.csproj", "{B28DA96D-4EE8-4A82-AFFC-F4029CB29287}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_menu_bars_rich_text", "06_menu_bars_rich_text\06_menu_bars_rich_text.csproj", "{53E050C5-F6B1-4D73-BB1F-4C6685EA92BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_menu_bars_rich_text", "06_menu_bars_rich_text\06_menu_bars_rich_text.csproj", "{53E050C5-F6B1-4D73-BB1F-4C6685EA92BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_tree_list_view", "07_tree_list_view\07_tree_list_view.csproj", "{1CCC3A5D-33FA-4D74-B08D-464CA87F4C2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{53E050C5-F6B1-4D73-BB1F-4C6685EA92BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53E050C5-F6B1-4D73-BB1F-4C6685EA92BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53E050C5-F6B1-4D73-BB1F-4C6685EA92BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CCC3A5D-33FA-4D74-B08D-464CA87F4C2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CCC3A5D-33FA-4D74-B08D-464CA87F4C2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CCC3A5D-33FA-4D74-B08D-464CA87F4C2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CCC3A5D-33FA-4D74-B08D-464CA87F4C2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
