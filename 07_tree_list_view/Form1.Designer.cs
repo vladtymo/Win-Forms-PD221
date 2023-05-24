@@ -114,7 +114,7 @@
             // 
             toolStripComboBox1.Items.AddRange(new object[] { "Tiles", "Details", "Large Icons", "Small Icons", "List" });
             toolStripComboBox1.Name = "toolStripComboBox1";
-            toolStripComboBox1.Size = new Size(240, 42);
+            toolStripComboBox1.Size = new Size(200, 42);
             // 
             // listView1
             // 
