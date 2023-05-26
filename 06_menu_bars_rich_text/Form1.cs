@@ -59,6 +59,11 @@ namespace _06_menu_bars_rich_text
             richTextBox.SelectionBullet = !richTextBox.SelectionBullet;
         }
 
+        private void clearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox.Clear();
+        }
+
         //private void toolStripTextBox2_TextChanged(object sender, EventArgs e)
         //{
         //    label1.Font = new Font(fontToolStripMenuItem.Font.FontFamily, float.Parse(toolStripTextBox2.Text), FontStyle.Regular);

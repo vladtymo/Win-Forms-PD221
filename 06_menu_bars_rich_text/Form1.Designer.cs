@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             menuStrip1 = new MenuStrip();
             toolStripMenuItem1 = new ToolStripMenuItem();
@@ -72,14 +73,22 @@
             toolStripComboBox2 = new ToolStripComboBox();
             toolStripSeparator7 = new ToolStripSeparator();
             toolStripButton2 = new ToolStripButton();
+            toolStripButton3 = new ToolStripButton();
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             toolStripProgressBar2 = new ToolStripProgressBar();
             richTextBox = new RichTextBox();
-            toolStripButton3 = new ToolStripButton();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            toolStripMenuItem3 = new ToolStripMenuItem();
+            saveToolStripMenuItem1 = new ToolStripMenuItem();
+            clearToolStripMenuItem = new ToolStripMenuItem();
+            cutToolStripMenuItem1 = new ToolStripMenuItem();
+            copyToolStripMenuItem1 = new ToolStripMenuItem();
+            pasteToolStripMenuItem1 = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             toolStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
+            contextMenuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
@@ -359,6 +368,16 @@
             toolStripButton2.Text = "Change Selected Text";
             toolStripButton2.Click += toolStripButton2_Click;
             // 
+            // toolStripButton3
+            // 
+            toolStripButton3.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton3.Image = (Image)resources.GetObject("toolStripButton3.Image");
+            toolStripButton3.ImageTransparentColor = Color.Magenta;
+            toolStripButton3.Name = "toolStripButton3";
+            toolStripButton3.Size = new Size(46, 36);
+            toolStripButton3.Text = "toolStripButton3";
+            toolStripButton3.Click += toolStripButton3_Click;
+            // 
             // statusStrip1
             // 
             statusStrip1.ImageScalingSize = new Size(32, 32);
@@ -382,21 +401,57 @@
             // 
             // richTextBox
             // 
+            richTextBox.ContextMenuStrip = contextMenuStrip1;
             richTextBox.Location = new Point(12, 107);
             richTextBox.Name = "richTextBox";
             richTextBox.Size = new Size(1491, 652);
             richTextBox.TabIndex = 4;
             richTextBox.Text = "Hello Rich Text Box...";
             // 
-            // toolStripButton3
+            // contextMenuStrip1
             // 
-            toolStripButton3.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton3.Image = (Image)resources.GetObject("toolStripButton3.Image");
-            toolStripButton3.ImageTransparentColor = Color.Magenta;
-            toolStripButton3.Name = "toolStripButton3";
-            toolStripButton3.Size = new Size(46, 36);
-            toolStripButton3.Text = "toolStripButton3";
-            toolStripButton3.Click += toolStripButton3_Click;
+            contextMenuStrip1.ImageScalingSize = new Size(32, 32);
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem3, saveToolStripMenuItem1, clearToolStripMenuItem });
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(301, 162);
+            // 
+            // toolStripMenuItem3
+            // 
+            toolStripMenuItem3.DropDownItems.AddRange(new ToolStripItem[] { cutToolStripMenuItem1, copyToolStripMenuItem1, pasteToolStripMenuItem1 });
+            toolStripMenuItem3.Name = "toolStripMenuItem3";
+            toolStripMenuItem3.Size = new Size(300, 38);
+            toolStripMenuItem3.Text = "Edit";
+            // 
+            // saveToolStripMenuItem1
+            // 
+            saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
+            saveToolStripMenuItem1.Size = new Size(300, 38);
+            saveToolStripMenuItem1.Text = "Save";
+            // 
+            // clearToolStripMenuItem
+            // 
+            clearToolStripMenuItem.Name = "clearToolStripMenuItem";
+            clearToolStripMenuItem.Size = new Size(300, 38);
+            clearToolStripMenuItem.Text = "Clear";
+            clearToolStripMenuItem.Click += clearToolStripMenuItem_Click;
+            // 
+            // cutToolStripMenuItem1
+            // 
+            cutToolStripMenuItem1.Name = "cutToolStripMenuItem1";
+            cutToolStripMenuItem1.Size = new Size(359, 44);
+            cutToolStripMenuItem1.Text = "Cut";
+            // 
+            // copyToolStripMenuItem1
+            // 
+            copyToolStripMenuItem1.Name = "copyToolStripMenuItem1";
+            copyToolStripMenuItem1.Size = new Size(359, 44);
+            copyToolStripMenuItem1.Text = "Copy";
+            // 
+            // pasteToolStripMenuItem1
+            // 
+            pasteToolStripMenuItem1.Name = "pasteToolStripMenuItem1";
+            pasteToolStripMenuItem1.Size = new Size(359, 44);
+            pasteToolStripMenuItem1.Text = "Paste";
             // 
             // Form1
             // 
@@ -416,6 +471,7 @@
             toolStrip1.PerformLayout();
             statusStrip1.ResumeLayout(false);
             statusStrip1.PerformLayout();
+            contextMenuStrip1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -470,5 +526,12 @@
         private ToolStripSeparator toolStripSeparator7;
         private ToolStripButton toolStripButton2;
         private ToolStripButton toolStripButton3;
+        private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem toolStripMenuItem3;
+        private ToolStripMenuItem cutToolStripMenuItem1;
+        private ToolStripMenuItem copyToolStripMenuItem1;
+        private ToolStripMenuItem pasteToolStripMenuItem1;
+        private ToolStripMenuItem saveToolStripMenuItem1;
+        private ToolStripMenuItem clearToolStripMenuItem;
     }
 }
